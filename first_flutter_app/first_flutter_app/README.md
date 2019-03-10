@@ -1,16 +1,9 @@
-# first_flutter_app
+# My First Flutter App
 
-Write Your First Flutter App Codelab, part 1 
+# Write Your First Flutter App Codelab, part 1 and part 2
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+<p p align="middle">
+  <img src="/screenshots/part1.png" width="100" />
+  <img src="/screenshots/part2-1.png" width="100" /> 
+  <img src="/screenshots/part2-2.png" width="100" />
+</p>
