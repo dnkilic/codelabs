@@ -62,21 +62,25 @@ main() {
 
 Lists and Iterables, from dart:collection, support fold, where, join, skip, and more. Dart also has Maps and Sets.
 
+Further Readings 
+
 https://www.dartlang.org/guides/libraries/useful-libraries
 https://pub.dartlang.org
-async await : https://dartpad.dartlang.org/fae22cffa7b184b4d27cd96dd633a5af
 https://news.dartlang.org/2012/02/method-cascades-in-dart-posted-by-gilad.html
 https://news.dartlang.org/2015/08/dart-112-released-with-null-aware.html
 https://codelabs.developers.google.com/?cat=Flutter
 
 Articles
-* Why Flutter Uses Dart
-* Announcing Dart 2: Optimized for Client-Side Development
-* Why I moved from Java to Dart
+* [Why Flutter Uses Dart](https://hackernoon.com/why-flutter-uses-dart-dd635a054ebf)
+* [Announcing Dart 2: Optimized for Client-Side Development](https://medium.com/dartlang/announcing-dart-2-80ba01f43b6)
+* [Why I moved from Java to Dart](https://hackernoon.com/why-i-moved-from-java-to-dart-8f3802b1d652)
+* [async await](https://dartpad.dartlang.org/fae22cffa7b184b4d27cd96dd633a5af)
+
 Resources
-* A Tour of the Dart Language
-* A Tour of the Dart Libraries
-* Effective Dart
+* [A Tour of the Dart Language](https://www.dartlang.org/guides/language/language-tour)
+* [A Tour of the Dart Libraries](https://www.dartlang.org/guides/libraries/library-tour)
+* [Effective Dart](https://www.dartlang.org/guides/language/effective-dart)
+
 Websites
-* Dart Language: www.dartlang.org
-* Dart for the web, including AngularDart: webdev.dartlang.org
+* [Dart Language](www.dartlang.org) 
+* [Dart for the web, including AngularDart](webdev.dartlang.org) 
