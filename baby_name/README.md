@@ -1,16 +1,20 @@
-# baby_name
+# Codelab: Firebase for Flutter
 
-A new Flutter project.
+Sample project to learn basics of Firebase for Flutter apps.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+## Outcomes
+* Fields in a Widget subclass are always marked "final".
+* Widget build is rerun every time setState is called (stateful widgets)
+* To set top padding: const EdgeInsets.only(top: 20.0)
+* dynamic keyword used to represent dynamic type Map<String, dynamic>
+* To set symmetric padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+* BoxDecoration can be used inside Container. BoxDecoration have circular border
+* To open Flutter app in xcode open ios/Runner.xcworkspace
+* Stream builder can be used to fetch firebase cloud collections
+* LinearProgressIndicator will show progress in the screen during stream fetching
+* Cloud Firestone may cause race condition. To prevent race conditions we should use Transactions
+* Dart or Flutter have async and await keywords
+* Note: There is another way to solve this problem without using a transaction. In general terms, you would use a stream containing each individual vote. Each vote would be represented by the number 1. The current displayed value for votes would then be the sum of the values in the stream. In Firebase, you could (for example) use a collection to hold the votes and an aggregation query to sum them.
+* Firestone base on NoSql and its non relational
+* https://www.youtube.com/watch?v=v_hR4K4auoQ&feature=youtu.be
+* https://hackernoon.com/whats-revolutionary-about-flutter-946915b09514
