@@ -21,8 +21,8 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  final _userNameTextEditingController = TextEditingController();
-  final _passwordTextEditingController = TextEditingController();
+  final _usernameController = TextEditingController();
+  final _passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -34,53 +34,58 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(height: 80.0),
             Column(
               children: <Widget>[
-                Image.asset(
-                  'assets/diamond.png',
-                  color: kShrineBackgroundWhite,
-                ),
+                Image.asset('assets/diamond.png'),
                 SizedBox(height: 16.0),
-                Text('SHRINE',),
+                Text(
+                  'SHRINE',
+                  style: Theme.of(context).textTheme.headline,
+                ),
               ],
             ),
             SizedBox(height: 120.0),
             AccentColorOverride(
-              color: kShrineAltYellow,
+              color: kShrineBrown900,
               child: TextField(
-                  controller: _userNameTextEditingController,
-                  decoration: InputDecoration(labelText: 'User Name')),
+                controller: _usernameController,
+                decoration: InputDecoration(
+                  labelText: 'Username',
+                ),
+              ),
             ),
-            SizedBox(
-              height: 12.0,
-            ),
+            SizedBox(height: 12.0),
             AccentColorOverride(
-              color: kShrineAltYellow,
+              color: kShrineBrown900,
               child: TextField(
-                controller: _passwordTextEditingController,
-                decoration: InputDecoration(labelText: 'Password'),
-                obscureText: true,
+                controller: _passwordController,
+                decoration: InputDecoration(
+                  labelText: 'Password',
+                ),
               ),
             ),
             ButtonBar(
               children: <Widget>[
                 FlatButton(
-                    shape: BeveledRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(7.0))),
-                    onPressed: () {
-                      _userNameTextEditingController.clear();
-                      _passwordTextEditingController.clear();
-                    },
-                    child: Text('CANCEL')),
-                RaisedButton(
+                  child: Text('CANCEL'),
                   shape: BeveledRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(7.0))),
+                    borderRadius: BorderRadius.all(Radius.circular(7.0)),
+                  ),
+                  onPressed: () {
+                    _usernameController.clear();
+                    _passwordController.clear();
+                  },
+                ),
+                RaisedButton(
+                  child: Text('NEXT'),
                   elevation: 8.0,
+                  shape: BeveledRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(7.0)),
+                  ),
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  child: Text('NEXT'),
-                )
+                ),
               ],
-            )
+            ),
           ],
         ),
       ),
@@ -99,8 +104,7 @@ class AccentColorOverride extends StatelessWidget {
   Widget build(BuildContext context) {
     return Theme(
       child: child,
-      data: Theme.of(context)
-          .copyWith(accentColor: color, brightness: Brightness.dark),
+      data: Theme.of(context).copyWith(accentColor: color),
     );
   }
 }
