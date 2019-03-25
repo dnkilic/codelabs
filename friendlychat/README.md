@@ -45,3 +45,10 @@ Sample project to learn basics of Flutter.
 * TargetPlatform.iOS and TargetPlatform.android can be used to specify different behaviours for different OS
 * CupertinoButton can be used to add iOS style buttons
 * Sample apps; https://github.com/flutter/flutter/tree/master/examples
+
+<p align="middle">
+  <img src="/friendlychat/screenshots/ss1.png" width="150" />
+  <img src="/friendlychat/screenshots/ss2.png" width="150" />
+</p>
+
+Components: ThemeData, TargetPlatform, TextEditingController, List, BoxDecoration, Flexible, Border, BorderSide, Colors, EdgeInsets, Divider, IconTheme, IconThemeData, TextField, CupertinoButton, AnimationController, Duration, SizeTransition, CurvedAnimation, CircleAvatar, Expanded
