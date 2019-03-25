@@ -6,7 +6,7 @@ Sample project to learn basics of Firebase for Flutter apps.
 * Fields in a Widget subclass are always marked "final".
 * Widget build is rerun every time setState is called (stateful widgets)
 * To set top padding: const EdgeInsets.only(top: 20.0)
-* dynamic keyword used to represent dynamic type Map<String, dynamic>
+* dynamic keyword scused to represent dynamic type Map<String, dynamic>
 * To set symmetric padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
 * BoxDecoration can be used inside Container. BoxDecoration have circular border
 * To open Flutter app in xcode open ios/Runner.xcworkspace
@@ -18,3 +18,9 @@ Sample project to learn basics of Firebase for Flutter apps.
 * Firestone base on NoSql and its non relational
 * https://www.youtube.com/watch?v=v_hR4K4auoQ&feature=youtu.be
 * https://hackernoon.com/whats-revolutionary-about-flutter-946915b09514
+
+<p align="middle">
+  <img src="/baby_name/screenshots/ss1.png" width="150" />
+</p>
+
+Components: StreamBuilder, Firestore, ValueKey, ListTile, BorderRadius, BoxDecoration, Border, DocumentReference
