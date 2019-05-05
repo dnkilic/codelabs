@@ -47,8 +47,8 @@ Sample project to learn basics of Flutter.
 * Sample apps; https://github.com/flutter/flutter/tree/master/examples
 
 <p align="middle">
-  <img src="/friendlychat/screenshots/ss1.png" width="150" />
-  <img src="/friendlychat/screenshots/ss2.png" width="150" />
+  <img src="/flutter/friendlychat/screenshots/ss1.png" width="150" />
+  <img src="/flutter/friendlychat/screenshots/ss2.png" width="150" />
 </p>
 
 Components: ThemeData, TargetPlatform, TextEditingController, List, BoxDecoration, Flexible, Border, BorderSide, Colors, EdgeInsets, Divider, IconTheme, IconThemeData, TextField, CupertinoButton, AnimationController, Duration, SizeTransition, CurvedAnimation, CircleAvatar, Expanded
