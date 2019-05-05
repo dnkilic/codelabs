@@ -53,7 +53,22 @@ public class LocationUpdatesIntentService extends IntentService {
 
     @Override
     protected void onHandleIntent(Intent intent) {
-
+        if (intent != null) {
+            final String action = intent.getAction();
+            if (ACTION_PROCESS_UPDATES.equals(action)) {
+                LocationResult result = LocationResult.extractResult(intent);
+                if (result != null) {
+                    List<Location> locations = result.getLocations();
+                    LocationResultHelper locationResultHelper = new LocationResultHelper(this,
+                            locations);
+                    // Save the location data to SharedPreferences.
+                    locationResultHelper.saveResults();
+                    // Show notification with the location data.
+                    locationResultHelper.showNotification();
+                    Log.i(TAG, LocationResultHelper.getSavedLocationResult(this));
+                }
+            }
+        }
     }
 }
 

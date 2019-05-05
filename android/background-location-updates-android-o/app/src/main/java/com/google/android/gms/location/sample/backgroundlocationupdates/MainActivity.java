@@ -143,7 +143,11 @@ public class MainActivity extends FragmentActivity implements GoogleApiClient.Co
      * updates.
      */
     private void createLocationRequest() {
-
+        mLocationRequest = new LocationRequest();
+        mLocationRequest.setInterval(UPDATE_INTERVAL);
+        mLocationRequest.setFastestInterval(FASTEST_UPDATE_INTERVAL);
+        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+        mLocationRequest.setMaxWaitTime(MAX_WAIT_TIME);
     }
 
     /**
@@ -171,7 +175,9 @@ public class MainActivity extends FragmentActivity implements GoogleApiClient.Co
     }
 
     private PendingIntent getPendingIntent() {
-        return null;
+        Intent intent = new Intent(this, LocationUpdatesIntentService.class);
+        intent.setAction(LocationUpdatesIntentService.ACTION_PROCESS_UPDATES);
+        return PendingIntent.getService(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
     }
 
     @Override
