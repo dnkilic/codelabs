@@ -48,6 +48,21 @@ public class LocationUpdatesBroadcastReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-
+        if (intent != null) {
+            final String action = intent.getAction();
+            if (ACTION_PROCESS_UPDATES.equals(action)) {
+                LocationResult result = LocationResult.extractResult(intent);
+                if (result != null) {
+                    List<Location> locations = result.getLocations();
+                    LocationResultHelper locationResultHelper = new LocationResultHelper(
+                            context, locations);
+                    // Save the location data to SharedPreferences.
+                    locationResultHelper.saveResults();
+                    // Show notification with the location data.
+                    locationResultHelper.showNotification();
+                    Log.i(TAG, LocationResultHelper.getSavedLocationResult(context));
+                }
+            }
+        }
     }
 }

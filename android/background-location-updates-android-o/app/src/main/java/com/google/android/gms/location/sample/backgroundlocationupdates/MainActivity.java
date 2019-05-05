@@ -175,9 +175,9 @@ public class MainActivity extends FragmentActivity implements GoogleApiClient.Co
     }
 
     private PendingIntent getPendingIntent() {
-        Intent intent = new Intent(this, LocationUpdatesIntentService.class);
-        intent.setAction(LocationUpdatesIntentService.ACTION_PROCESS_UPDATES);
-        return PendingIntent.getService(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        Intent intent = new Intent(this, LocationUpdatesBroadcastReceiver.class);
+        intent.setAction(LocationUpdatesBroadcastReceiver.ACTION_PROCESS_UPDATES);
+        return PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
     }
 
     @Override
