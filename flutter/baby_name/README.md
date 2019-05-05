@@ -20,7 +20,7 @@ Sample project to learn basics of Firebase for Flutter apps.
 * https://hackernoon.com/whats-revolutionary-about-flutter-946915b09514
 
 <p align="middle">
-  <img src="/baby_name/screenshots/ss1.png" width="150" />
+  <img src="/flutter/baby_name/screenshots/ss1.png" width="150" />
 </p>
 
 Components: StreamBuilder, Firestore, ValueKey, ListTile, BorderRadius, BoxDecoration, Border, DocumentReference

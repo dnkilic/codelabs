@@ -32,9 +32,9 @@ dependencies:
 * Bootstrap in Dart: https://flutter.dev/docs/resources/bootstrap-into-dart
 
 <p align="middle">
-  <img src="/first_flutter_app/screenshots/part1.png" width="150" />
-  <img src="/first_flutter_app/screenshots/part2-1.png" width="150" /> 
-  <img src="/first_flutter_app/screenshots/part2-2.png" width="150" />
+  <img src="/flutter/first_flutter_app/screenshots/part1.png" width="150" />
+  <img src="/flutter/first_flutter_app/screenshots/part2-1.png" width="150" /> 
+  <img src="/flutter/first_flutter_app/screenshots/part2-2.png" width="150" />
 </p>
 
 Components: Center, TextStyle, ListTile, Iterable, MaterialPageRoute

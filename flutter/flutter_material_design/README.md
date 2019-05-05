@@ -18,7 +18,7 @@ Sample project to learn basics of Material Design for Flutter apps.
 * In addition to Flat and Raised button we have OutlineButton, FloatingActionButton, IconButton and more.
 
 <p align="middle">
-  <img src="/flutter_material_design/screenshots/101.png" width="150" />
+  <img src="/flutter/flutter_material_design/screenshots/101.png" width="150" />
 </p>
 
 Components: StatefulWidget, State, Scaffold, SafeArea, ListView, EdgeInsets, SizedBox, Column, ButtonBar, FlatButton, RaisedButton, ButtonTheme, TextEditingController, TextField, Navigator, FloatingActionButton, OutlineButton, IconButton.
@@ -41,7 +41,7 @@ Components: StatefulWidget, State, Scaffold, SafeArea, ListView, EdgeInsets, Siz
 * Images has fit attribute to change their scaling(by default its scaleDown). For exxample; fit: BoxFit.fitWidth,
 
 <p align="middle">
-  <img src="/flutter_material_design/screenshots/102.png" width="150" />
+  <img src="/flutter/flutter_material_design/screenshots/102.png" width="150" />
 </p>
 
 Components: Scaffold, AppBar, IconButton, Icon, Semantics, GridView, Card, EdgeInsets, Clip, Column, CrossAxisAlignment, AspectRatio, Padding, SizedBox, Image, List, ThemeData, NumberFormat, Localizations, Theme, BoxFit
@@ -51,10 +51,10 @@ Components: Scaffold, AppBar, IconButton, Icon, Semantics, GridView, Card, EdgeI
 * Another good way to use colors: Colors.pink[400]
 * Example of good design. We can ask our designers to come up with same style
 <p align="middle">
-  <img src="/flutter_material_design/screenshots/design1.jpeg" width="300" />
+  <img src="/flutter/flutter_material_design/screenshots/design1.jpeg" width="300" />
 </p>
 <p align="middle">
-  <img src="/flutter_material_design/screenshots/design2.png" width="300" />
+  <img src="/flutter/flutter_material_design/screenshots/design2.png" width="300" />
 </p>
 
 * Those two web pages can be used to create our own applications; https://material.io/tools/theme-editor/, https://material.io/tools/color/#!/?view.left=0&view.right=0
@@ -83,10 +83,10 @@ fonts:
 * AppBar has brightness attribute. We can use Brightness.light for example.
 
 <p align="middle">
-  <img src="/flutter_material_design/screenshots/103-1.png" width="150" />
-  <img src="/flutter_material_design/screenshots/103-2.png" width="150" />
-  <img src="/flutter_material_design/screenshots/103-3.png" width="150" />
-  <img src="/flutter_material_design/screenshots/103-4.png" width="150" />
+  <img src="/flutter/flutter_material_design/screenshots/103-1.png" width="150" />
+  <img src="/flutter/flutter_material_design/screenshots/103-2.png" width="150" />
+  <img src="/flutter/flutter_material_design/screenshots/103-3.png" width="150" />
+  <img src="/flutter/flutter_material_design/screenshots/103-4.png" width="150" />
 </p>
 
 Components: ThemeData, TextTheme, Color, Text, InputDecorationTheme, OutlineInputBorder, BorderRadius, Brightness
@@ -104,8 +104,8 @@ Components: ThemeData, TextTheme, Color, Text, InputDecorationTheme, OutlineInpu
 * To detect gesture on column we need to wrap column with GestureDetector widget.
 
 <p align="middle">
-  <img src="/flutter_material_design/screenshots/104-1.png" width="150" />
-  <img src="/flutter_material_design/screenshots/104-2.png" width="150" />
+  <img src="/flutter/flutter_material_design/screenshots/104-1.png" width="150" />
+  <img src="/flutter/flutter_material_design/screenshots/104-2.png" width="150" />
 </p>
 
 Components: SingleTickerProviderStateMixin, Stack, CrossAxisAlignment, AnimationController, AnimationStatus, BoxConstraints, RelativeRectTween, RelativeRect, PositionedTransition, LayoutBuilder, SizedBox, EdgeInsetsDirectional, ValueChanged, GestureDetector, TextAlign, HitTestBehavior, AlignmentDirectional, PositionedTransition, Expanded, AnimatedWidget, FractionalTranslation, ReverseAnimation, CurvedAnimation, Offset, Interval, Tween, MaterialPageRoute
